@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    margin: 0;
+}
+
+/* settings for header and childrens*/
+.header {
+    background-color: black;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.top-header {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.bottom-header {
+   grid-row: 2 / 3;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+}
+
+/* settings for dashboard and childrens*/
+.dashboard {
+    background-color: rgb(60, 60, 61);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+}
+
+/* settings for main-content and childrens*/
+.main-content { 
+    background-color: gray;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+   
